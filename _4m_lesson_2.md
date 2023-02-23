@@ -1,7 +1,7 @@
 # Task 1
 ## Question
 **Categories jadval barcha ustun ma’lumotlarini bilan qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM categories
 ```
@@ -13,7 +13,7 @@ SELECT * FROM categories
 # Task 2
 ## Question
 **Categories jadval category_name va description ustun ma’lumotlarini qaytaring**
-### Query
+### Written code
 ```python
 SELECT category_name, description FROM categories
 ```
@@ -25,7 +25,7 @@ SELECT category_name, description FROM categories
 ## Question
 **Categories jadval barcha ustun ma’lumotlari olishda ustun nomlarini o’zbekcha tarjimada
 qaytaring. M-n: category_name=Nomi**
-### Query
+### Written code
 ```python
 SELECT category_name as kategoriya_nomi, description as tavsifi, picture as rasm FROM categories
 ```
@@ -37,7 +37,7 @@ SELECT category_name as kategoriya_nomi, description as tavsifi, picture as rasm
 ## Question
 **Categories jadvaldan kategoriya nomi ’Confections’ ga teng bo’lgan ma’lumotlarni
 qaytaring**
-### Query
+### Written code
 ```python
 SELECT * FROM categories
 WHERE category_name = 'Confections'
@@ -50,7 +50,7 @@ WHERE category_name = 'Confections'
 ## Question
 **Categories jadvaldan kategoriya nomi ‘Produce’ yoki ‘Seafood’ bo’lgan ma’lumotlarni
 qaytaring**
-### Query
+### Written code
 ```python
 SELECT * FROM categories
 WHERE category_name = 'Produce' OR category_name = 'Seafood'
@@ -64,7 +64,7 @@ WHERE category_name = 'Produce' OR category_name = 'Seafood'
 **Categories jadvaldan quyida belgilangan ma’lumotlarni qaytaring.**
 ![Снимок экрана_20230223_200704](https://user-images.githubusercontent.com/122611764/220946142-77ace279-47d3-48a8-8e30-5d6dfa1eacd7.png)
 
-### Query
+### Written code
 ```python
 SELECT * FROM categories
 WHERE category_id BETWEEN 6 AND 8
@@ -76,7 +76,7 @@ WHERE category_id BETWEEN 6 AND 8
 # Task 7
 ## Question
 **Categories jadvaldan ma’lumotlarni description alifbo bo’yicha Z-A tartibida chiqaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM categories
 ORDER BY description DESC -- ASC (A - Z)
@@ -88,7 +88,7 @@ ORDER BY description DESC -- ASC (A - Z)
 # Task 8
 ## Question
 **Customers jadvalidan barcha ma’lumotlarni oling.**
-### Query
+### Written code
 ```python
 SELECT * FROM customers
 ```
@@ -99,7 +99,7 @@ SELECT * FROM customers
 # Task 9
 ## Question
 **Customers jadvalida ustun nomlarini o’zbekcha holatda oling.**
-### Query
+### Written code
 ```python
 SELECT customer_id AS mijoz_id,
        company_name AS kompaniya_nomi,
@@ -121,7 +121,7 @@ FROM customers
 # Task 10
 ## Question
 **Customers jadvalidan contact_title ‘Owner’ bo’lgan ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM customers
 WHERE contact_title = 'Owner'
@@ -133,7 +133,7 @@ WHERE contact_title = 'Owner'
 # Task 11
 ## Question
 **Customers jadvalidan city ‘London’ bo’lgan ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM customers
 WHERE city = 'London'
@@ -145,7 +145,7 @@ WHERE city = 'London'
 # Task 12
 ## Question
 **Customers jadvalidan region ustun NULL bo’lgan ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM customers
 WHERE region IS NULL
@@ -157,7 +157,7 @@ WHERE region IS NULL
 # Task 13
 ## Question
 **Customers jadvalidan region ustun NULL bo’lmagan ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM customers
 WHERE region IS NOT NULL
@@ -169,7 +169,7 @@ WHERE region IS NOT NULL
 # Task 14
 ## Question
 **Customers jadvalidan country ustun Germany bo’lgan ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM customers
 WHERE country = 'Germany'
@@ -181,7 +181,7 @@ WHERE country = 'Germany'
 # Task 15
 ## Question
 **Customers jadvalidan country ustun Germany bo’lgan qatorlar sonini qaytaring.**
-### Query
+### Written code
 ```python
 SELECT count(*) FROM customers
 WHERE NOT country = 'Germany'
@@ -194,7 +194,7 @@ WHERE NOT country = 'Germany'
 ## Question
 **Customers jadvalidan fax ustun NULL bo’lmalgan ma’lumotlarni contact_name ustun
 alifbo tartiba tartiblab qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM customers
 WHERE fax IS NOT NULL
@@ -207,7 +207,7 @@ ORDER BY contact_name
 # Task 17
 ## Question
 **Employees jadvaldan barcha ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM employees
 ```
@@ -218,7 +218,7 @@ SELECT * FROM employees
 # Task 18
 ## Question
 **Employees jadval ustun nomlarini o’zbekcha qaytaring.**
-### Query
+### Written code
 ```python
 SELECT employee_id AS xodim_id,
        first_name AS ismi,
@@ -247,7 +247,7 @@ FROM employees
 # Task 19
 ## Question
 **Employess jadvaldan title_of_courtest ‘Mr’ bo’lgan xodimlarni firts_name alifbo tartibida qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM employees
 WHERE title_of_courtesy = 'Mr.'
@@ -260,7 +260,7 @@ ORDER BY first_name ASC
 # Task 20
 ## Question
 **Employes jadvalda title ‘Sales Representative’ bo’lgan xodimlar sonini qaytaring.**
-### Query
+### Written code
 ```python
 SELECT count(*) FROM employees
 WHERE title = 'Sales Representative'
@@ -272,7 +272,7 @@ WHERE title = 'Sales Representative'
 # Task 21
 ## Question
 **Employes jadvalda hire_date 1994-yilda bo’lgan ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM employees
 WHERE hire_date BETWEEN '1994-01-01' AND '1994-12-31'
@@ -285,7 +285,7 @@ WHERE hire_date BETWEEN '1994-01-01' AND '1994-12-31'
 ## Question
 **Employes jadvaldan region NULL bo’lmagan xodimlarni first_name, last_name, title, city,
 home_phone ma’lumotlarini first_name Z-A alifbo tartibida qaytaring.**
-### Query
+### Written code
 ```python
 SELECT first_name, last_name, title,city, home_phone FROM employees
 ORDER BY first_name DESC
@@ -297,7 +297,7 @@ ORDER BY first_name DESC
 # Task 23
 ## Question
 **Orders jadvaldan customer_id ‘VINET’ bo’lgan buyurtmalarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM orders
 WHERE customer_id = 'VINET'
@@ -309,7 +309,7 @@ WHERE customer_id = 'VINET'
 # Task 24
 ## Question
 **Orders jadvaldan order_date ustuni orqali 1996-yildagi ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM orders
 WHERE order_date BETWEEN '1996-01-01' AND '1996-12-31'
@@ -321,7 +321,7 @@ WHERE order_date BETWEEN '1996-01-01' AND '1996-12-31'
 # Task 25
 ## Question
 **Orders jadvaldan ship_region ustun NULL bo’lmagan ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM orders
 WHERE ship_region IS NOT NULL
@@ -333,7 +333,7 @@ WHERE ship_region IS NOT NULL
 # Task 26
 ## Question
 **Orders jadvaldan order_id 10300 va 10400 orasida bo’lgan ma’lumotlarni qaytaring.**
-### Query
+### Written code
 ```python
 SELECT * FROM orders
 WHERE order_id BETWEEN 10300 AND 10400
@@ -345,7 +345,7 @@ WHERE order_id BETWEEN 10300 AND 10400
 # Task 27
 ## Question
 **Order Details jadvaldan unit_price ustun umumiy qiymatini qaytaring.**
-### Query
+### Written code
 ```python
 SELECT sum(unit_price) FROM order_details
 ```
