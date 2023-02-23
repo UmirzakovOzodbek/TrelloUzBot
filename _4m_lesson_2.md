@@ -342,6 +342,7 @@ WHERE order_date BETWEEN '1996-01-01' AND '1996-12-31'
 ```
 # Result
 ![Снимок экрана_20230223_191329](https://user-images.githubusercontent.com/122611764/220957256-5b728c5e-ba5b-4a28-8026-577032476da3.png)
+![Снимок экрана_20230223_205646](https://user-images.githubusercontent.com/122611764/220961023-a2445f5b-06d1-4ac6-818b-11ad51ffe14d.png)
 
  ____
  
