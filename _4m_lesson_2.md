@@ -229,7 +229,7 @@ ORDER BY contact_name
 SELECT * FROM employees
 ```
 # Result
-![Снимок экрана_20230223_190116](https://user-images.githubusercontent.com/122611764/220959609-fbb01131-a733-4114-a652-2b891bd20c0d.png)
+![Снимок экрана_20230223_185143](https://user-images.githubusercontent.com/122611764/220959854-36b910e8-3d23-479c-bbf3-29bd928ca552.png)
 
 
  ____
