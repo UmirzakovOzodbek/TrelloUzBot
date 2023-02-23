@@ -1,7 +1,7 @@
 # Task 1
 ## Question
 **Categories jadval barcha ustun ma’lumotlarini bilan qaytaring.**
-**Query**
+### Query
 ```python
 SELECT * FROM categories
 ```
