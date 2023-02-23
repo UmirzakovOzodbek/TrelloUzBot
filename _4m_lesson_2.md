@@ -71,7 +71,7 @@ WHERE category_name = 'Produce' OR category_name = 'Seafood'
 ### Written code
 ```python
 SELECT * FROM categories
-WHERE category_id BETWEEN 6 AND 8
+LIMIT 3 OFFSET 5
 ```
 # Result
 ![Снимок экрана_20230223_181647](https://user-images.githubusercontent.com/122611764/220953381-8684ae55-0152-4377-80be-807cb3956eaf.png)
