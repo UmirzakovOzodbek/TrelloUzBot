@@ -17,7 +17,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM salesman 
-WHERE city IN('Paris','Rome')
+WHERE city IN ('Paris', 'Rome')
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221371956-988e90e3-8e70-4f0d-8deb-e4a067567c27.png)
@@ -30,7 +30,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM salesman 
-WHERE city NOT IN('Paris','Rome')
+WHERE city NOT IN ('Paris', 'Rome')
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221372034-43102e53-5483-470d-9060-9ac988aac0e5.png)
@@ -43,7 +43,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM customer 
-WHERE customer_id IN (3007,3008,3009)
+WHERE customer_id IN (3007, 3008, 3009)
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221372219-449dd90c-7325-4476-bed9-4b9fd27cf02f.png)
@@ -225,7 +225,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM testtable 
-WHERE col1 LIKE '%/%%' ESCAPE'/'
+WHERE col1 LIKE '%/%%' ESCAPE '/'
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221374030-263f764e-661e-42ef-953f-af2f17f6eb6d.png)
@@ -238,7 +238,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM testtable 
-WHERE col1 NOT LIKE '%/%%' ESCAPE'/'
+WHERE col1 NOT LIKE '%/%%' ESCAPE '/'
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221374050-193e9e0a-6366-4f38-9949-1c4314279377.png)
