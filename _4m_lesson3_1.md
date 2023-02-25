@@ -137,7 +137,7 @@ ____
 ### Written code
 ```sql
 SELECT *  FROM emp_details  
-WHERE emp_lname ='Dosni' OR emp_lname= 'Mardy'
+WHERE emp_lname = 'Dosni' OR emp_lname = 'Mardy'
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221366297-bdefaf20-5ab6-499d-84a6-4a39eb1f6a8c.png)
