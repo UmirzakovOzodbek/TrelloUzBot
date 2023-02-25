@@ -69,7 +69,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM  orders 
-WHERE NOT ((ord_date ='2012-09-10'AND salesman_id > 5005) OR purch_amt > 1000.00)
+WHERE NOT ((ord_date = '2012-09-10' AND salesman_id > 5005) OR purch_amt > 1000.00)
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221365894-1c631d2b-e1d8-400c-bc8d-22ad5b80fcf3.png)
@@ -81,7 +81,7 @@ ____
 **From the following table, write a SQL query to find the details of those salespeople whose commissions range from 0.10 to0.12. Return salesman_id, name, city, and commission.**
 ### Written code
 ```sql
-SELECT salesman_id,name,city,commission FROM salesman 
+SELECT salesman_id, name,city, commission FROM salesman 
 WHERE (commission > 0.10 AND commission < 0.12)
 ```
 # Result
@@ -149,7 +149,7 @@ ____
 **From the following table, write a SQL query to find the employees who work at depart 47 or 63. Return emp_idno, emp_fname, emp_lname, and emp_dept.**
 ### Written code
 ```sql
-SELECT *  FROM emp_details 
+SELECT * FROM emp_details 
 WHERE emp_dept = 47 OR emp_dept = 63
 ```
 # Result
