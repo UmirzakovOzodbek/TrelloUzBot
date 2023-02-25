@@ -232,7 +232,7 @@ ____
 ```sql
 SELECT * FROM nobel_win  
 WHERE (subject = 'Physics' AND year = 1970) UNION (SELECT * FROM nobel_win  
-WHERE (subject= 'Economics' AND year = 1971))
+WHERE (subject = 'Economics' AND year = 1971))
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221364372-d22269f6-4865-41e0-a7f2-26bdc22f8c78.png)
