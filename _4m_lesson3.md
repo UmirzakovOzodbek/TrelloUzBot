@@ -64,7 +64,7 @@ ____
 **Write a SQL statement to display specific columns such as names and commissions for all salespeople.**
 ### Written code
 ```sql
-SELECT name, commission FROM salesman
+SELECT name, commission FROM salesman 
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221363447-1592b330-4e02-47f4-b1db-a9134aa8176c.png)
