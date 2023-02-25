@@ -100,8 +100,8 @@ ____
 **From the following table, write a SQL query to locate salespeople who live in the city of 'Paris'. Return salesperson's name, city.**
 ### Written code
 ```sql
-SELECT name,city FROM salesman 
-WHERE city='Paris'
+SELECT name, city FROM salesman 
+WHERE city = 'Paris'
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221363561-75a822bd-252e-4611-a2b2-72cc51f39420.png)
@@ -113,8 +113,8 @@ ____
 **From the following table, write a SQL query to find customers whose grade is 200. Return customer_id, cust_name, city, grade, salesman_id.**
 ### Written code
 ```sql
-SELECT *FROM customer 
-WHERE grade=200
+SELECT * FROM customer 
+WHERE grade = 200
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221363603-8af888e2-8bed-4e14-8f61-5c3e32abbfb1.png)
@@ -127,7 +127,7 @@ ____
 ### Written code
 ```sql
 SELECT ord_no, ord_date, purch_amt FROM orders 
-WHERE salesman_id=5001
+WHERE salesman_id = 5001
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221363636-c996a976-eb92-4340-ab56-ddce96bad318.png)
@@ -139,8 +139,8 @@ ____
 **From the following table, write a SQL query to find the Nobel Prize winner(s) for the year 1970. Return year, subject and winner. **
 ### Written code
 ```sql
-SELECT year,subject,winner FROM nobel_win 
-WHERE year=1970
+SELECT year, subject, winner FROM nobel_win 
+WHERE year = 1970
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221363672-57bcbba3-32cd-4c20-b86d-bc545e043f4b.png)
@@ -179,7 +179,7 @@ ____
 ### Written code
 ```sql
 SELECT winner FROM nobel_win 
-WHERE year>=1950 AND subject='Physics'
+WHERE year >= 1950 AND subject = 'Physics'
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221364091-80206675-423d-408e-b3a0-a4c926731f21.png)
@@ -205,7 +205,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM nobel_win 
-WHERE year >1972 AND winner IN ('Menachem Begin','Yitzhak Rabin')
+WHERE year > 1972 AND winner IN ('Menachem Begin', 'Yitzhak Rabin')
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221364240-5082fe9c-038c-4203-ae55-b8a31d33d2f1.png)
@@ -231,8 +231,8 @@ ____
 ### Written code
 ```sql
 SELECT * FROM nobel_win  
-WHERE (subject ='Physics' AND year=1970) UNION (SELECT * FROM nobel_win  
-WHERE (subject='Economics' AND year=1971))
+WHERE (subject = 'Physics' AND year = 1970) UNION (SELECT * FROM nobel_win  
+WHERE (subject= 'Economics' AND year = 1971))
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221364372-d22269f6-4865-41e0-a7f2-26bdc22f8c78.png)
@@ -245,7 +245,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM nobel_win 
-WHERE year=1970 AND subject NOT IN('Physiology','Economics')
+WHERE year = 1970 AND subject NOT IN ('Physiology', 'Economics')
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221364412-9e605050-7d0f-4753-a148-872d4c59a123.png)
@@ -258,8 +258,8 @@ ____
 ### Written code
 ```sql
 SELECT * FROM nobel_win 
-WHERE (subject ='Physiology' AND year<1971) UNION (SELECT * FROM nobel_win 
-WHERE (subject ='Peace' AND year>=1974))
+WHERE (subject = 'Physiology' AND year < 1971) UNION (SELECT * FROM nobel_win 
+WHERE (subject = 'Peace' AND year >= 1974))
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221364755-afab5cf5-76df-4a91-b027-45a004ecb2d2.png)
@@ -272,7 +272,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM nobel_win 
-WHERE winner='Johannes Georg Bednorz'
+WHERE winner = 'Johannes Georg Bednorz'
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221364813-05f3dcbf-55fc-4f34-8f30-9d1deb2eb860.png)
@@ -298,7 +298,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM nobel_win
-WHERE year=1970 
+WHERE year = 1970 
 ORDER BY
  CASE
     WHEN subject IN ('Economics','Chemistry') THEN 1
@@ -330,8 +330,8 @@ ____
 **From the following table, write a SQL query to find the details of 1970 Nobel Prize winners. Order the results by subject, ascending except for 'Chemistry' and ‘Economics’ which will come at the end of the result set. Return year, subject, winner, country, and category.**
 ### Written code
 ```sql
-SELECT AVG(pro_price) FROM item_mast 
-WHERE pro_com=16
+SELECT avg(pro_price) FROM item_mast 
+WHERE pro_com = 16
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221365014-1a589470-e900-4df4-8286-c0eb9217dba9.png)
@@ -369,7 +369,7 @@ ____
 **From the following table, write a SQL query to calculate average price of the items for each company. Return average price and company code.**
 ### Written code
 ```sql
-SELECT AVG(pro_price), pro_com FROM item_mast 
+SELECT avg(pro_price), pro_com FROM item_mast 
 GROUP BY pro_com
 ```
 # Result
@@ -408,7 +408,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM emp_details 
-WHERE emp_lname= 'Snares'
+WHERE emp_lname = 'Snares'
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221365239-63664d4e-80e6-4ab5-8764-57549b420fbf.png)
@@ -421,7 +421,7 @@ ____
 ### Written code
 ```sql
 SELECT * FROM emp_details 
-WHERE emp_dept= 57
+WHERE emp_dept = 57
 ```
 # Result
 ![image](https://user-images.githubusercontent.com/122611764/221365265-58234375-839e-4110-a065-bf8c81225e5e.png)
