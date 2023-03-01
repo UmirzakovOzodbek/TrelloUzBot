@@ -262,7 +262,7 @@ WHERE department_id IN
     (SELECT department_id 
 		FROM employees 
 	 GROUP BY department_id 
-	 HAVING COUNT(department_id)>=2)
+	 HAVING count(department_id)>=2)
 GROUP BY country_name, city
 ```
 # Result
