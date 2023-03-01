@@ -316,8 +316,8 @@ ____
 SELECT CONCAT(e.first_name, ' ', e.last_name) AS Employee_name, j.job_title, a.*
 FROM employees e
 JOIN
-  (SELECT MAX(start_date),
-          MAX(end_date),
+  (SELECT max(start_date),
+          max(end_date),
           employee_id
    FROM job_history
    GROUP BY employee_id) a ON e.employee_id=h.employee_id
