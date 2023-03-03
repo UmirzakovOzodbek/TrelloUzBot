@@ -262,7 +262,7 @@ WHERE department_id IN
     (SELECT department_id 
 		FROM employees 
 	 GROUP BY department_id 
-	 HAVING COUNT(department_id)>=2)
+	 HAVING count(department_id)>=2)
 GROUP BY country_name, city
 ```
 # Result
@@ -313,16 +313,14 @@ ____
 # Task 25
 ### Written code
 ```sql
-SELECT CONCAT(e.first_name, ' ', e.last_name) AS Employee_name,
-       j.job_title,
-       h.*
+SELECT CONCAT(e.first_name, ' ', e.last_name) AS Employee_name, j.job_title, a.*
 FROM employees e
 JOIN
-  (SELECT MAX(start_date),
-          MAX(end_date),
+  (SELECT max(start_date),
+          max(end_date),
           employee_id
    FROM job_history
-   GROUP BY employee_id) h ON e.employee_id=h.employee_id
+   GROUP BY employee_id) a ON e.employee_id=h.employee_id
 JOIN jobs j ON j.job_id=e.job_id
 WHERE e.commission_pct = 0
 ```
