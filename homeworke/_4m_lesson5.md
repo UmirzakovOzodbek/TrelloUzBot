@@ -140,17 +140,20 @@ ____
 ### Regions
 ```python
 CREATE TABLE Regions(
+  first_name VARCHAR(100) NOT NULL,
+  last_name VARCHAR(100) NOT NULL,
   region_id INT PRIMARY KEY,
-  region_name VARCHAR(50) NOT NULL
+  region_name VARCHAR(50) NOT NULL,
+  phone VARCHAR(50) NOT NULL
 );
 
-INSERT INTO Regions(region_id, region_name) VALUES
-(1, 'North America'),
-(2, 'Europe'),
-(3, 'Asia')
+INSERT INTO Regions(first_name, last_name, region_id, region_name, phone) VALUES
+('Ozodbek', 'Umirzakov', 1, 'North America', '8927398237'),
+('Abduraxim', 'Abduraxmonov', 2, 'Europe', '2837487324'),
+('Bekzod', 'Kuldashev', 3, 'Asia', '3874268723');
 ```
 # Result
-![image](https://user-images.githubusercontent.com/122611764/222701584-dc5c17c4-f458-42f4-8c75-fbe98bdf3d27.png)
+![Снимок экрана 2023-03-03 160543](https://user-images.githubusercontent.com/122611764/222704865-f0aa5345-fcd7-47ce-9137-9e370062e3e0.png)
 
 
 
